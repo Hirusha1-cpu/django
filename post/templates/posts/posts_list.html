@@ -8,12 +8,14 @@ Home
     <h1>Post Lists</h1>
     {% for post in posts %}
     <article class = "post">
-        <a href="{% url 'page' slug=post.slug %}">
+        <a href="{% url 'post:page' slug=post.slug %}">
 
             <h2>{{ post.title}}</h2>
         </a>
+        <img class='banner' src="{{post.banner.url}}" alt="{{ post.title}}">
         <p>{{ post.date}}</p>
         <p>{{ post.body}}</p>
+        <p>{{ post.slug}}</p>
     </article>
     {% endfor %}
 </section>

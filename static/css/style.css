@@ -8,7 +8,7 @@ body{
     min-height: 100vh;
     display: grid;
     place-content: center;
-    font-size: 3rem;
+    font-size: 1.6rem;
     background-color: black;
     color: whitesmoke;
 }
@@ -17,3 +17,21 @@ h1,p{
     text-align: center;
 }
 
+.banner{
+display: block;
+width: 100%;
+min-width: 800px;
+}
+.logout{
+    display: inline-block;
+}
+
+.logout-button{
+    font-size: 2.5rem;
+    background-color: black;
+    border: none;
+}
+
+.logout-button:hover{
+    opacity: 0.85;
+}
